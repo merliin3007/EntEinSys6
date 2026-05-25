@@ -7,7 +7,7 @@
 
 # How do you encode these inputs into your functions interface? 
 
-See [](/lib/src/blink_thread.c), lines 18-29:
+See [lib/src/blink_thread.c](/lib/src/blink_thread.c), lines 18-29:
 
 ```c
 struct Thread example_threads_part_e2[2] = {
