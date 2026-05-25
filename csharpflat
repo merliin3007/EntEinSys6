@@ -1,0 +1,14 @@
+bear -- make clean all
+clear
+echo "    ______  __ __  __   CSharp_flat ($(gcc --version | head -n1))"
+echo "   / ____/_/ // /_/ /_   - part_a  -> compile and run part a"
+echo "  / /   /_  _  __/ __ \  - part_bc -> compile and run part b+c"
+echo " / /___/_  _  __/ /_/ /  - part_d  -> compile and run part d"
+echo " \____/ /_//_/ /_.___/   - part_e  -> compile and run part e"
+alias build="make all"
+alias part_a="make part_a && bin/part_a"
+alias part_bc="make part_bc && bin/part_bc"
+alias part_b=part_bc
+alias part_c=part_bc
+alias part_d="make part_d && bin/part_d"
+alias part_e="make part_e && bin/part_e"
