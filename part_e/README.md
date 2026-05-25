@@ -1,4 +1,4 @@
-# **Part E:**
+# **Part E:** Simulated Threads
 
 - We have decided to _not_ take two distinct integer arrays, one for the offsets and one for the period, but one array of `struct Thread`s containng both information. The reason is consistency with [excercise part d](../part_d/README.md).
 
