@@ -93,6 +93,8 @@ int led_blink_multiple(struct Thread *threads, size_t count)
             }
         }
     }
+    // just in case this function might be used by someone else...
+    free(states);
     return 0;
 }
 

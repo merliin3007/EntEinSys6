@@ -84,6 +84,8 @@ void led_blink_multiple(struct Thread *threads, size_t count)
     for (size_t i = 0; i < count; ++i) {
         pthread_join(thread_ids[i], NULL);
     }
+    // just in case this function might be used by someone else...
+    free(thread_ids);
 }
 
 int main(void)
